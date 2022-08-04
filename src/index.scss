@@ -1,0 +1,8 @@
+// Override default variables before the import
+$table-cell-padding-x-sm: 1rem;
+$table-cell-padding-x: 15px;
+$primary: #009688;
+
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';

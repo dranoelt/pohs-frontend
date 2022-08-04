@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
+import { BrowserRouter } from 'react-router-dom';
+import { SnackbarProvider } from 'notistack';
+import './index.scss';
+import './css/style.css';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <SnackbarProvider maxSnack={3} autoCorrect={5000} anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}>
+        <App />
+      </SnackbarProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

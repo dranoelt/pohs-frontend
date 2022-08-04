@@ -1,0 +1,17 @@
+@media (min-width : 1400px) {
+    .container {
+        max-width: 1400px;
+        height: 80vh;
+        position: relative;
+    }
+    .foo-btn {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+    }
+    .btm-stick {
+        position: absolute;
+        bottom: 100px;
+        padding-right: 6rem;
+    }
+}
