@@ -1,6 +1,6 @@
 import axios from "axios";
 import authHeaders from "./auth-headers";
-const API_URL = 'http://192.168.18.11:4001/';
+const API_URL = 'http://pohs-backend.user.cloudjkt01.com/';
 
 const register = (username, email, password) => {
     return axios.post(API_URL + 'register', {

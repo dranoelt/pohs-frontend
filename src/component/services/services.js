@@ -1,6 +1,6 @@
 import axios from "axios";
 import authHeaders from "./auth-headers";
-const API_URL = 'http://192.168.18.11:4001/api/';
+const API_URL = 'http://pohs-backend.user.cloudjkt01.com/api/';
 
 const getData = section => {
     return axios.get(API_URL + `${section}`, {headers: authHeaders()})
